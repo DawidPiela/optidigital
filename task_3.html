@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ad bidding system</title>
+    <script async src="https://cdn.jsdelivr.net/npm/prebid.js@latest/dist/prebid.js"></script>
+    <script async src="https://c.amazon-adsystem.com/aax2/apstag.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        #cmp-banner {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        #cmp-banner button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my Webpage</h1>
+    </header>
+    <main>
+        <p>Hello.</p>
+
+        <!-- Ad Placeholder -->
+        <div id="ad-slot-1" style="width: 300px; height: 250px; border: 1px solid black;"></div>
+
+        <div id="cmp-banner">
+            <p>We use cookies to personalize content and ads. Do you consent to the use of cookies for ad targeting?</p>
+            <button id="cmp-accept">Accept</button>
+            <button id="cmp-decline">Decline</button>
+        </div>
+    </main>
+    <script type="module" src="task3_scripts/main.js"></script>
+</body>
+</html>
